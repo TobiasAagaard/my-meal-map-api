@@ -1,14 +1,12 @@
 package main
 
 import (
+	"github.com/TobiasAagaard/meal-map-api/routes"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	server := gin.Default()
-	v1 := server.Group("/api/v1")
-	{
-		v1.GET("/meals")
-	}
+	routes.SetupRoutes(server)
 	server.Run(":8080")
 }
