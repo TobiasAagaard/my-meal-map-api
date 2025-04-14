@@ -6,6 +6,9 @@ import (
 
 func main() {
 	server := gin.Default()
-
-	server.Run()
+	v1 := server.Group("/api/v1")
+	{
+		v1.GET("/meals")
+	}
+	server.Run(":8080")
 }
