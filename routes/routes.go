@@ -9,6 +9,5 @@ func SetupRoutes(server *gin.Engine) {
 	{
 		v1.GET("/meals")
 		v1.POST("/meals")
-
 	}
 }
