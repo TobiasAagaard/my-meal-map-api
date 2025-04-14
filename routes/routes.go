@@ -5,9 +5,10 @@ import (
 )
 
 func SetupRoutes(server *gin.Engine) {
-	api := server.Group("/api/v1")
+	v1 := server.Group("/api/v1")
 	{
-		api.GET("/meals")
+		v1.GET("/meals")
+		v1.POST("/meals")
 
 	}
 }
