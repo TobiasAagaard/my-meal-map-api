@@ -1,0 +1,39 @@
+# Ignore build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code workspace and settings
+.vscode/
+
+# Rider IDE files
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NuGet packages
+*.nupkg
+# The packages folder can be included if you want to avoid committing cached packages
+packages/
+
+# ASP.NET Core secret storage (if used)
+secrets.json
+
+# Publish output folder
+publish/
+
+# Logs
+*.log
+
+# Azure Web App publish settings
+*.Publish.xml
+
+# Docker files if you want to ignore local images/config (optional)
+docker-compose.override.yml
